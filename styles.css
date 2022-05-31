@@ -1,0 +1,141 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav.desktop .desktop_header{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: auto;
+	width: 100%;
+	padding: 20px 0;
+	transition: 0.2s all;
+}
+
+nav.desktop {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	transition: 0.2s all;
+}
+
+.desktop_header ul{
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.desktop_header .logo {
+	width: 314px;
+	height: auto;
+	transition: 0.2s all;
+}
+.desktop_header ul li , .desktop_header ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 30px;
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+}
+.desktop_header ul li a {
+	margin: 0 20px;
+}
+
+.showcase{
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	height: 34rem;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	background: url(assets/product.jpg) no-repeat fixed top center/cover ;
+}
+
+.showcase_container{
+	width: 100%;
+	max-width: 1600px;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.cards{
+	display: flex;
+}
+
+.card_container{
+	display: flex;
+	flex-flow:column wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 1600px;
+	padding: 0 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.card_container h3{
+	font-size: 48px;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.card_container p{
+	margin-top: 5px;
+	font-size: 30px;
+}
+
+.card_container .products{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+section .product{
+	display: flex;
+	width: 500px;
+	height: 500px;
+	margin: 25px;
+	max-width: 100%;
+}
+
+.product img{
+	object-fit: cover;
+}
+
+.products .product:nth-child(3n) {
+	margin-right: 0;
+}
+
+.products .product:nth-child(3n-2) {
+	margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.mobile{
+		display: none;
+	}
+
+	.desktop{
+		background: #000;
+		opacity: 0.7;
+	}
+
+	.desktop_header ul li a {
+		color: white;
+	}
+}
